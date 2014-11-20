@@ -4,17 +4,31 @@
 #include <string>
 #include <iostream>
 using namespace std;
+void loadGame(istream &in){
+	string line;
+	while(getline(in,line)){
+		if(in.eof()){
+			break;
+		}
+		
+		if(){
+			
+		}
+	}
+}
 int main(){
 	string s;
+	//string for intake user's input
 	while(cin>>s){
 		if(cin.eof()){
 			break;
 		}
+		//LOAD function
 		else if(s=="-load"){
 			string infile;
 			cin>>infile;
 			ifstream in(infile.c_str());
-			loadFile(in);
+			loadGame(in);
 		}
 		else if(s=="-testing"){
 			while(s!="quitTesting"){

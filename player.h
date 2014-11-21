@@ -25,6 +25,7 @@ class Human: public Player{
 public:
 	Human(std::string Name);
 };
+friend ostream& operator<<(outstream& out, Player* p);
 
 class PC:public Player{
 public:

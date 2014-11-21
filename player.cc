@@ -1,4 +1,6 @@
 #include <cstdlib>
+#include <iostream>
+using namespace std;
 void give(Property &prop,Player &p){
 	p.receive(prop);
 	this.remove(prop);
@@ -26,4 +28,9 @@ bool isBankrupted(){
 		return true;
 	}
 	return false;
+}
+ostream & operator<<(ostream &out, Player* p){
+	out<<"Player piece: "<<p.piece<<endl;
+	out<<"Player's current cash: "<<p.money<<endl;
+	return out;
 }
